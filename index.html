@@ -24,9 +24,16 @@
 
         #header-hamburger {
             margin-top: 18px;
-            background-color: blue;
-            width: 46px;
-            height: 46px;
+            display: inline-block;
+            background-size: 422px 405px;
+            background-repeat: no-repeat;
+            background-position: -335px -283px;
+        }
+
+        #header-hamburger > div { 
+            background-image: url(../clone_naver/asset/sp_main.png);
+            width: 26px;
+            height: 26px;
         }
 
         #main {
@@ -41,7 +48,9 @@
     <div id = "wrap">
         <div id = "wrap-center">
             <div id = "header">
-                <div id = "header-hamburger"></div>
+                <div id = "header-hamburger">
+                    <div></div>
+                </div>
             </div>
             <div id = "search"></div>
             <div id = "nav"></div>

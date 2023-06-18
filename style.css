@@ -2,23 +2,51 @@
     margin: 0px;
     padding: 0px;
 }
-/* 감싸주는 요소 min-width*/
+/* min-width = 최소 너비 */
 #wrap {
     min-width: 1340px;
     text-align: left;
-    background-color: blue;
 }
 
 #header {
     width : 1280px;
     margin: auto;
-    background-color: yellow;
 }
 
 #topSearchWrap {
     position: relative;
     height: 156px;
-    background-color: red;
+}
+
+#search_area {
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    z-index: 10;
+    width: 706px;
+    border: 1px solid #03c75a;
+    border-radius: 33px;
+}
+
+
+
+#searchForm > input {
+}
+
+
+
+#searchForm > button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 17px 27px 16px 10px;
+    cursor: pointer;
+}
+
+#topAsideArea {
+    position : absolute;
+    top : 18px;
+    left : 10px;
 }
 
 #topAsideButton {
@@ -29,7 +57,7 @@
 }
 
 #topAsideButton :hover {
-    background-color: gray;
+    background-color: lightgray;
     border-radius: 50%;
 }
 

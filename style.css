@@ -1,100 +1,39 @@
-:root {
-    --color_title: #fff;
-    --color_title_rgb: 255,255,255;
-    --color_body: #f3f3f3;
-    --color_body_rgb: 243,243,243;
-    --color_caption1: #cbcbcb;
-    --color_caption1_rgb: 203,203,203;
-    --color_caption2: #b5b5b5;
-    --color_caption2_rgb: 181,181,181;
-    --color_search: #fff;
-    --color_search_rgb: 255,255,255;
-    --color_border_out: #383c3c;
-    --color_border_out_rgb: 56,60,60;
-    --color_border_in: #313334;
-    --color_border_in_rgb: 49,51,52;
-    --color_border_in_divider: #3c3e3e;
-    --color_border_in_divider_rgb: 60,62,62;
-    --color_border_in_exception: #454749;
-    --color_border_in_exception_rgb: 69,71,73;
-    --color_button_border: #515254;
-    --color_button_border_rgb: 81,82,84;
-    --color_dot_divider: #747474;
-    --color_dot_divider_rgb: 116,116,116;
-    --color_block_bg: #272829;
-    --color_block_bg_rgb: 39,40,41;
-    --color_board_bg: #292a2c;
-    --color_board_bg_rgb: 41,42,44;
-    --color_option_bg: #313233;
-    --color_option_bg_rgb: 49,50,51;
-    --color_login_bg: #2d2e2f;
-    --color_login_bg_rgb: 45,46,47;
-    --color_menu_widget_bg: #353637;
-    --color_menu_widget_bg_rgb: 53,54,55;
-    --color_setting_bg: #2b2c2d;
-    --color_setting_bg_rgb: 43,44,45;
-    --color_button1_bg: #343638;
-    --color_button1_bg_rgb: 52,54,56;
-    --color_button2_bg: #454749;
-    --color_button2_bg_rgb: 69,71,73;
-    --color_news: #7e9fff;
-    --color_news_rgb: 126,159,255;
-    --color_news_econ_stay: #a2acbc;
-    --color_news_econ_stay_rgb: 162,172,188;
-    --color_news_econ_down: #899bee;
-    --color_news_econ_down_rgb: 137,155,238;
-    --color_live_news_price: #ff6956;
-    --color_live_news_price_rgb: 255,105,86;
-    --color_enter: #eb48e8;
-    --color_enter_rgb: 235,72,232;
-    --color_enter_bg: #33323a;
-    --color_enter_bg_rgb: 51,50,58;
-    --color_sports: #729df2;
-    --color_sports_rgb: 114,157,242;
-    --color_sports_bg: #313235;
-    --color_sports_bg_rgb: 49,50,53;
-    --color_econ: #3fd7bc;
-    --color_econ_rgb: 63,215,188;
-    --color_calendar: #f08484;
-    --color_calendar_rgb: 240,132,132;
-    --color_dic: #bccdf4;
-    --color_dic_rgb: 188,205,244;
-}
-
 #html, body {
-    margin: 0px; 
+    margin: 0px;
     padding: 0px;
 }
-
+/* 감싸주는 요소 min-width*/
 #wrap {
-    text-align: center;
+    min-width: 1340px;
+    text-align: left;
+    background-color: blue;
 }
 
 #header {
     width : 1280px;
+    margin: auto;
     background-color: yellow;
-    display: inline-block; 
 }
 
-#topsearchbar {
-    text-align: left;
+#topSearchWrap {
+    position: relative;
+    height: 156px;
+    background-color: red;
 }
 
-#header-hamburger {
-    margin-top: 18px;
-    display: inline-block;
-    padding: 10px;
+#topAsideButton {
     background: none;
-    border: none;
+    padding : 10px;
+    border : none;
     cursor: pointer;
 }
 
-#header-hamburger :hover {
-    background-color: var(--color_option_bg);
+#topAsideButton :hover {
+    background-color: gray;
     border-radius: 50%;
 }
 
-#header-hamburger > div {
+#topAsideButton > div {
     background-image: url(../clone_naver/asset/sp_main.png);
     width: 26px;
     height: 26px;
@@ -103,6 +42,7 @@
     background-position: -335px -283px;
 }
 
-#main {
+
+#footer {
     height: 2000px;
 }

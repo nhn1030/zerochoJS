@@ -16,9 +16,10 @@ html, body {
 }
 
 #topSearchWrap {
+    z-index: 120;
     position: relative;
     height: 156px;
-    z-index: 9999;
+    padding: 64px 0 42px;
 }
 
 #search_area {
@@ -29,6 +30,7 @@ html, body {
     width: 706px;
     border: 1px solid #03c75a;
     border-radius: 33px;
+    display: inline-block;
 }
 
 
@@ -148,32 +150,45 @@ html, body {
 }
 
 #shortcut_area {
-    position: relative;
+    position: absolute;
     width: 676px;
     margin: 72px auto 0;
-    display: block;
-    text-align: right;
 }
 
 
-#shortcut_list {
+#shortcut_area > ul {
     list-style: none;
+    margin: 0;
     padding: 0;
-    display: flex;
-    list-style-type: disc;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
-    margin: 0;
-    padding: 0;
 }
 
-.shortcut_item {
-    display: list-item;
+#shortcut_item {
+    float: left;
     text-align: -webkit-match-parent;
+    display: list-item;
 }
+
+#link_service {
+    position: relative;
+    display: block;
+    width: 64px;
+}
+
+#service_name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    margin-top: 7px;
+    line-height: 20px;
+    text-align: center;
+}
+
 
 #footer {
     height: 2000px;

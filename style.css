@@ -1,3 +1,5 @@
+@import "reset.css";
+
 #html, body {
     margin: 0px;
     padding: 0px;
@@ -21,26 +23,101 @@
 #search_area {
     position: absolute;
     top: 64px;
-    left: 50%;
+    left: 25%;
     z-index: 10;
     width: 706px;
     border: 1px solid #03c75a;
     border-radius: 33px;
 }
 
+#search_group {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
 
+#search {
+    position: relative;
+    padding-left: 83px;
+}
 
-#searchForm > input {
+#search_home_logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#linkToNaver {
+    position: relative;
+    display: block;
+    margin-right: 12px;
+    padding: 17px 17px 17px 27px;
+}
+
+#linkToNaver div {
+    background-image: url(../clone_naver/asset/sp_main.png);
+    width: 24px;
+    height: 24px;
+    background-size: 423px 405px;
+    background-repeat: no-repeat;
+    background-position: -325px -341px;
 }
 
 
 
-#searchForm > button {
+#search_input_box {
+    width: 540px;
+}
+
+#search_input_box > input {
+    width: 100%;
+    height: 58px;
+    color: #000;
+    color: var(--color_search);
+    z-index: 10;
+    position: relative;
+    padding: 17px 0;
+    background-color: rgba(0,0,0,0);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 2rem;
+    line-height: 24px;
+    font-weight: bold;
+    outline: 0;
+}
+
+#btn_search {
     position: absolute;
+    width: 62px;
+    height: 58px;
     top: 0;
     right: 0;
     padding: 17px 27px 16px 10px;
     cursor: pointer;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    background: none;
+    border: 0;
+}
+
+
+#search_btn.ico_btn_search {
+    display: inline-block;
+    content: "";
+    background-image: url(../clone_naver/asset/sp_main.png);
+    background-size: 422px 405px;
+    background-position: -364px -132px;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+}
+
+#btn_blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
 }
 
 #topAsideArea {
